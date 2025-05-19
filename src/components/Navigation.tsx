@@ -1,7 +1,12 @@
 const Navigation = () => {
   return (
     <>
-      <div>Veikia</div>
+      <div>
+        <img
+          src="/images/booker/white/Ekrano kopija 2025-05-16 140715.png"
+          alt=""
+        />
+      </div>
     </>
   );
 };
