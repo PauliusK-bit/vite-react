@@ -3,9 +3,7 @@ import ShoesList from "../../components/ShoesList";
 const ShoesPage = () => {
   return (
     <>
-      <div>
-        <ShoesList />
-      </div>
+      <ShoesList />
     </>
   );
 };

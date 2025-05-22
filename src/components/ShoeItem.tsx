@@ -7,7 +7,7 @@ const ShoeItem = ({ data }: ShoeProps) => {
     <>
       <div>
         <p>{name}</p>
-        <img src={imageURL} alt="..." />
+        <img src={imageURL} alt="Aprašymas" />
       </div>
     </>
   );
