@@ -1,7 +1,11 @@
+import CategoriesList from "./CategoriesList";
+
 const Navigation = () => {
   return (
     <>
-      <div>Veikia</div>
+      <div>
+        <CategoriesList />
+      </div>
     </>
   );
 };
