@@ -1,15 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import "./App.css";
-import CategoriesPage from "./pages/CategoriesPage/CategoriesPage";
 
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Navigation />
         <Routes>
-          <Route path="categories" element={<CategoriesPage />} />
           <Route path="categories/:id" element={<CategoryPage />} />
         </Routes>
       </BrowserRouter>
