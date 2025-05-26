@@ -5,13 +5,6 @@ import axios from "axios";
 import { API_URL } from "../../config/config";
 import styled from "styled-components";
 
-const Title = styled.h2`
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #2c3e50;
-  font-weight: 700;
-`;
-
 const ShoeItem = styled.li`
   background-color: #ffffff;
   padding: 20px;
@@ -91,7 +84,6 @@ const CategoryPage = () => {
 
   return (
     <>
-      <Title>Shoes:</Title>
       {shoes.length === 0 ? (
         <p style={{ fontSize: "20px", color: "#bdc3c7", textAlign: "center" }}>
           No shoes found.

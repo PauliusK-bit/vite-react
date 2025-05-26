@@ -3,6 +3,13 @@ import { Category } from "./types";
 import axios from "axios";
 import { API_URL } from "../config/config";
 import CategoryItem from "./CategoryItem";
+import styled from "styled-components";
+
+const StyledLink = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+`;
 
 const CategoriesList = () => {
   const [categories, setCategories] = useState<Category[]>([]);
@@ -22,11 +29,11 @@ const CategoriesList = () => {
 
   return (
     <>
-      <div>
+      <StyledLink>
         {categories.map((category, index) => (
           <CategoryItem key={index} data={category} />
         ))}
-      </div>
+      </StyledLink>
     </>
   );
 };
